@@ -140,8 +140,13 @@ $(document).ready(function(){
 		if(scrollTop >=1950 && scrollTop <=2400){
 			$("#weapon").show();
 		} 
+		if(scrollTop > 3200){
+			$("#chicken").hide();
+		}
+		if(scrollTop <= 3200){
+			$("#chicken").show();
+		}
 	});
-	
 	
 });
 </script>
