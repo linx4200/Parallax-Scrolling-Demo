@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>流言挖掘鸡</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" /> 
+  
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jstween-1.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	
+	var windowW = $(window).innerWidth();
+	var windowH = $(window).innerHeight();
+	
+	
+	
+	//Initialization
+	$("#content5").css("height",(windowH-40)+"px");
+	$("#animationContainer").css("height",(windowH-40)+"px");
+	$("#logo").css("margin-left",(windowW-670)/2 + "px");
+	
+
+	$("#rice").hide();
+	$("#weapon").hide();
+	$("#chicken").hide();
+	$("#gossip1").hide();
+	$("#gossip2").hide();
+	$("#gossip3").hide();
+	$("#gossip4").hide();
+	$("#gossip5").hide();
+	$("#gossip6").hide();
+	$("#gossip7").hide();
+	$("#gossip8").hide();
+	$("#gossip9").hide();
+	$("#hand").hide();
+	
+	
+	//chicken born
+	$("#egg").click(function(){
+		$(this).hide();
+		$("#bubble").hide();
+		$("#chicken").show();
+		$("#brokenEggLeft").addClass("brokenEggAnimationLeft");
+		$("#brokenEggRight").addClass("brokenEggAnimationRight");
+		$("body").css("overflow-y","scroll");
+		$( window ).tween({
+           scroll:{
+           stop: function(){
+			   return windowH
+		   },
+           time: 1,
+           duration: 0.7
+		   }
+        }).play();
+	});
+	$("#brokenEggLeft").click(function(){
+		$("#egg").hide();
+		$("#bubble").hide();
+		$("#chicken").show();
+		$("#brokenEggLeft").addClass("brokenEggAnimationLeft");
+		$("#brokenEggRight").addClass("brokenEggAnimationRight");
+		$("body").css("overflow-y","scroll");
+		$( window ).tween({
+           scroll:{
+           stop: function(){
+			   return windowH
+		   },
+           time: 1,
+           duration: 0.7
+		   }
+        }).play();
+		
+	});
+	$("#brokenEggRight").click(function(){
+		$("#egg").hide();
+		$("#bubble").hide();
+		$("#chicken").show();
+		$("#brokenEggLeft").addClass("brokenEggAnimationLeft");
+		$("#brokenEggRight").addClass("brokenEggAnimationRight");
+		$("body").css("overflow-y","scroll");
+		$( window ).tween({
+           scroll:{
+           stop: function(){
+			   return windowH
+		   },
+           time: 1,
+           duration: 0.7
+		   }
+        }).play();
+	});
+	
+	
+	
+	$(window).scroll(function(){
+		var scrollTop = $(window).scrollTop();  //get the current top offset
+		if(scrollTop >=1700){
+			$("#gossip1").hide();
+			$("#gossip2").hide();
+			$("#gossip3").hide();
+		} 
+		if(scrollTop <=1700 && scrollTop >=1420){
+			$("#gossip1").show();
+			$("#gossip2").show();
+			$("#gossip3").show();
+		} 
+		
+		if(scrollTop >=2470){
+			$("#gossip4").hide();
+			$("#gossip5").hide();
+			$("#gossip6").hide();
+			$("#gossip7").hide();
+			$("#gossip8").hide();
+			$("#gossip9").hide();
+		} 
+		if(scrollTop <=2470 && scrollTop >=2240){
+			$("#gossip4").show();
+			$("#gossip5").show();
+			$("#gossip6").show();
+			$("#gossip7").show();
+			$("#gossip8").show();
+			$("#gossip9").show();
+		} 
+		if(scrollTop >=1000 || scrollTop <=780){
+			$("#rice").hide();
+		}  
+		if(scrollTop <=1000 && scrollTop >=780){
+			$("#rice").show();
+		} 
+		if(scrollTop >=1050 || scrollTop <=730){
+			$("#hand").hide();
+		}  
+		if(scrollTop <=1050 && scrollTop >=730){
+			$("#hand").show();
+		} 
+		if(scrollTop <=1950 || scrollTop >=2400){
+			$("#weapon").hide();
+		}  
+		if(scrollTop >=1950 && scrollTop <=2400){
+			$("#weapon").show();
+		} 
+	});
+	
+	
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	
+
+		
+});
+</script>
+</head>
+
+<body>
+<div id="header">
+</div>
+
+<div id="hand" data-730="background-position:120% 20%" data-900="background-position:100% 30%" data-1050="background-position:120% 20%"></div>
+<div id="rice" data-780="background-position:95% 30%" data-850="background-position:75% 50%"></div>
+<div id="gossip1" class="gossipTop" data-1420="background-position:-20% 20%" data-1620="background-position:15% 35%"></div>
+<div id="gossip2" class="gossipTop" data-1420="background-position:-40% 50%" data-1620="background-position:15% 50%"></div>
+<div id="gossip3" class="gossipTop" data-1440="background-position:-13% 58%" data-1620="background-position:15% 58%"></div>
+<div id="gossip4" class="gossipBelow" data-2240="background-position:120% 10%" data-2440="background-position:75% 30%"></div>
+<div id="gossip5" class="gossipBelow" data-2240="background-position:130% 35%" data-2440="background-position:75% 35%"></div>
+<div id="gossip6" class="gossipBelow" data-2240="background-position:120% 50%" data-2440="background-position:75% 43%"></div>
+<div id="gossip7" class="gossipBelow" data-2240="background-position:140% 49%" data-2440="background-position:75% 49%"></div>
+<div id="gossip8" class="gossipBelow" data-2240="background-position:120% 58%" data-2440="background-position:75% 58%"></div>
+<div id="gossip9" class="gossipBelow" data-2240="background-position:130% 50%" data-2440="background-position:75% 62%"></div>
+<div id="weapon" data-1950="background-position:37% 58%" data-2400="background-position:85% 58%"></div>
+<div id="chicken" data-0="background-position:85% 50%" data-1030="background-position:85% 50%"  data-1690="background-position:15% 50%" data-2380="background-position:85% 50%" data-3080="background-position:15% 50%" ></div>
+
+
+<div id="animationContainer">
+     <img src="images/logo.png" alt="流言挖掘鸡" />
+     <div id="bubble"><img src="images/bubble.png" alt="点我" /></div>
+     <div id="egg"><img src="images/egg.png" alt="鸡蛋" /></div>
+     <div id="brokenEggLeft"><img src="images/brokenEggLeft.png" /></div>
+     <div id="brokenEggRight"><img src="images/brokenEggRight.png" /></div>
+</div><!-- /animationContainer  -->
+
+<div id="parallaxContainer">
+  <div class="contentContainer" id="content1">
+     <div id="title1" class="title" data-0="top:70%;left:5%;" data-710="top:50%" data-1420="top:0%"></div>
+  </div>
+  <div class="contentContainer" id="content2">
+     <div id="title2" class="title" data-710="top:70%;left:55%;" data-1420="top:50%" data-2130="top:0%"></div>
+  </div>
+  <div class="contentContainer" id="content3">
+     <div id="title3" class="title" data-1420="top:70%;left:5%;" data-2130="top:50%" data-2840="top:0%"></div>
+  </div>
+  <div class="contentContainer" id="content4">
+     <div id="title4" class="title" data-2130="top:70%;left:48%;" data-2840="top:50%" data-3550="top:0%"></div>
+  </div>
+  <div class="contentContainer" id="content5">
+     <div id="logo"><img src="images/logo.png" alt="流言挖掘鸡" /><a href="#" id="a-signUp">马上注册(登录)>></a></div>
+  </div>
+  <div id="copyright"></div>
+</div><!-- /parallax container -->
+<script type="text/javascript" src="js/skrollr.min.js"></script>
+<script type="text/javascript">
+	window.onload = function() {
+		skrollr.init({
+			forceHeight: false
+		});
+	}
+</script>
+</body>
+</html>

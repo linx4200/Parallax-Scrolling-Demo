@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*    animation effect */
+
+@-webkit-keyframes eggShake{
+	0%{
+		-webkit-transform:rotate(0deg);
+	}
+	6.25%{
+		-webkit-transform:rotate(-2deg);
+	}
+	12.5%{
+		-webkit-transform:rotate(0deg);
+	}
+	18.75%{
+		-webkit-transform:rotate(2deg);
+	}
+	25%{
+		-webkit-transform:rotate(0deg);
+	}
+	31.25%{
+		-webkit-transform:rotate(-2deg);
+	}
+    37.5%{
+		-webkit-transform:rotate(0deg);
+	}
+	43.75%{
+		-webkit-transform:rotate(2deg);
+	}
+	50%{
+		-webkit-transform:rotate(0deg);
+	}
+	100%{
+		-webkit-transform:rotate(0deg);
+	}
+}
+
+@-webkit-keyframes bubbleShow{
+	0%{
+		-webkit-opacity:0;
+	}
+	80%{
+		-webkit-opacity:0;
+	}
+	100%{
+		-webkit-opacity:1;
+	}
+}
+@-webkit-keyframes eggBreakLeft{
+	0%{
+		-webkit-opacity:1;
+		-webkit-transform:rotate(0deg);
+	}
+	70%{
+		-webkit-opacity:1;
+	}
+	100%{
+		-webkit-opacity:0;
+		-webkit-transform:rotate(-115deg) translate(-500px,-350px);
+	}
+}
+@-webkit-keyframes eggBreakRight{
+	0%{
+		-webkit-opacity:1;
+		-webkit-transform:rotate(0deg);
+	}
+	70%{
+		-webkit-opacity:1;
+	}
+	100%{
+		-webkit-opacity:0;
+		-webkit-transform:rotate(-57deg) translate(-120px,220px);
+	}
+}
+
+
+
+
+
+
+@-moz-keyframes eggShake{
+	0%{
+		-moz-transform:rotate(0deg);
+	}
+	6.25%{
+		-moz-transform:rotate(-2deg);
+	}
+	12.5%{
+		-moz-transform:rotate(0deg);
+	}
+	18.75%{
+		-moz-transform:rotate(2deg);
+	}
+	25%{
+		-moz-transform:rotate(0deg);
+	}
+	31.25%{
+		-moz-transform:rotate(-2deg);
+	}
+    37.5%{
+		-moz-transform:rotate(0deg);
+	}
+	43.75%{
+		-moz-transform:rotate(2deg);
+	}
+	50%{
+		-moz-transform:rotate(0deg);
+	}
+	100%{
+		-moz-transform:rotate(0deg);
+	}
+}
+
+@-moz-keyframes bubbleShow{
+	0%{
+		-moz-opacity:0;
+		opacity:0;
+	}
+	80%{
+		-moz-opacity:0;
+		opacity:0;
+	}
+	100%{
+		-moz-opacity:1;
+		opacity:1;
+	}
+}
+
+@-moz-keyframes eggBreakLeft{
+	0%{
+		-moz-opacity:1;
+		opacity:1;
+		-moz-transform:rotate(0deg);
+	}
+	70%{
+		-moz-opacity:1;
+		opacity:1;
+	}
+	100%{
+		-moz-opacity:0;
+		opacity:0;
+		-moz-transform:rotate(-115deg) translate(-500px,-350px);
+	}
+}
+@-moz-keyframes eggBreakRight{
+	0%{
+		-moz-opacity:1;
+		opacity:1;
+		-moz-transform:rotate(0deg);
+	}
+	70%{
+		-moz-opacity:1;
+		opacity:1;
+	}
+	100%{
+		-moz-opacity:0;
+		opacity:0;
+		-moz-transform:rotate(-57deg) translate(-120px,220px);
+	}
+}

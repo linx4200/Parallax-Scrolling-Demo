@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(animation.css);
+
+html,body{
+	margin:0;
+	padding:0;
+	width:100%;;
+}
+
+body{
+	background:url(../images/background.jpg);
+	overflow:hidden;
+}
+#header{
+	color:#fff;
+	height:40px;
+	background:url(../images/header-background.png) repeat-x;
+}
+#animationContainer{
+	width:1024px;
+	margin:0 auto 200px;
+	position:relative;
+	height:710px;
+}
+#animationContainer img{	
+   position:absolute;
+   top:50px;
+   left:0px;
+}
+#bubble,#egg{
+	position:absolute;
+}
+#bubble{
+	display:block;
+	top:50px;
+	left:400px;
+	-webkit-opacity:1;
+	-moz-opacity:1;
+	
+	-webkit-animation-name:bubbleShow;
+	-webkit-animation-duration:1.5s;
+	-webkit-animation-timing-function:ease-in;
+	
+	-moz-animation-name:bubbleShow;
+	-moz-animation-duration:1.5s;
+	-moz-animation-timing-function:ease-in;
+}
+#egg{
+	display:block;
+	top:10px;
+	left:600px;
+	
+	-webkit-animation-name:eggShake;   
+	-webkit-animation-duration:0.8s;
+	-webkit-animation-iteration-count:infinite;
+	
+	-moz-animation-name:eggShake;
+	-moz-animation-duration:0.8s;
+	-moz-animation-iteration-count:infinite;
+}
+#brokenEggLeft:hover,#brokenEggRight:hover,#egg:hover{
+	cursor:pointer;
+}
+#brokenEggLeft{
+	display:block;
+	position:absolute;
+	top:51px;
+	left:678px;
+	-webkit-opacity:0;
+	-moz-opacity:0;
+	opacity:0;
+	z-index:3;
+}
+#brokenEggRight{
+	position:absolute;
+	top:257px;
+	left:676px;
+	-webkit-opacity:0;
+	-moz-opacity:0;
+	opacity:0;
+	z-index:3;
+}
+.brokenEggAnimationLeft{
+	-webkit-animation-name:eggBreakLeft;
+	-webkit-animation-duration:1s;
+	
+	-moz-animation-name:eggBreakLeft;
+	-moz-animation-duration:1s;
+}
+.brokenEggAnimationRight{
+	-webkit-animation-name:eggBreakRight;
+	-webkit-animation-duration:1s;
+	
+	-moz-animation-name:eggBreakRight;
+	-moz-animation-duration:1s;
+}
+#smallChicken{
+	position:absolute;
+	top:150px;
+	left:700px;
+	z-index:2;
+}
+.contentContainer{
+	width:100%;
+	overflow:hidden;
+	position:relative;
+	height:710px;
+}
+.title{
+	width:100%;
+	height:465px;
+	position:relative;
+	z-index:2;
+}
+#chicken{
+	width:100%;
+	border:0;
+	height:600px;
+	position:fixed;
+	z-index:3;
+	background:url(../images/chicken.png) no-repeat 0 center fixed;
+}
+#hand{
+	border:0;
+	width:100%;
+	height:300px;
+	position:fixed;
+	z-index:4;
+	background:url(../images/hand.png) no-repeat  fixed;
+}
+#rice{
+	border:0;
+	width:100%;
+	height:320px;
+	position:fixed;
+	z-index:4;
+	background:url(../images/rice.png) no-repeat fixed;
+}
+.gossipTop{
+	border:0;
+	position:fixed;
+	z-index:4;
+}
+.gossipBelow{
+	border:0;
+	position:fixed;
+	z-index:4;
+}
+#gossip1{
+	width:100%;
+	height:800px;
+	background:url(../images/gossip1.png) no-repeat  fixed;
+}
+#gossip2{
+	width:100%;
+	height:300px;
+	background:url(../images/gossip2.png) no-repeat fixed;
+}
+#gossip3{
+	width:100%;
+	height:400px;
+	background:url(../images/gossip3.png) no-repeat fixed;
+}
+#gossip4{
+	width:100%;
+	height:400px;
+	background:url(../images/gossip4.png) no-repeat fixed;
+}
+#gossip5{
+	width:100%;
+	height:400px;
+	background:url(../images/gossip5.png) no-repeat fixed;
+}
+#gossip6{
+	width:100%;
+	height:400px;
+	background:url(../images/gossip6.png) no-repeat fixed;
+}
+#gossip7{
+	width:100%;
+	height:420px;
+	background:url(../images/gossip7.png) no-repeat fixed;
+}
+#gossip8{
+	width:100%;
+	height:420px;
+	background:url(../images/gossip8.png) no-repeat fixed;
+}
+#gossip9{
+	width:100%;
+	height:420px;
+	background:url(../images/gossip9.png) no-repeat fixed;
+}
+#weapon{
+	border:0;
+	width:100%;
+	height:600px;
+	position:fixed;
+	z-index:5;
+	background:url(../images/weapon.png) no-repeat fixed;
+}
+#content5 #logo{
+	margin-top:150px;
+}
+#content5 #a-signUp{
+	border:0;
+	display:block;
+	width:405px;
+	height:65px;
+	background:url(../images/signUp.png) no-repeat;
+	text-indent:-999999px;
+	margin:-140px 0 0 250px;
+}
+#copyright{
+	height:40px;
+	background:url(../images/copyright-background.png) repeat-x;
+}
+#content1{
+	background:url(../images/background1.png) 0px 0px fixed repeat-x;
+}
+#title1{
+	background:url(../images/title1.png) 0px 0px no-repeat;
+}
+#content2{
+	background:url(../images/background2.png) 0px 0px fixed repeat-x;
+}
+#title2{
+	background:url(../images/title2.png) 0px 0px  no-repeat;
+}
+#content3{
+	background:url(../images/background3.png) 0px 0px fixed repeat-x;
+}
+#title3{
+	background:url(../images/title3.png) 0px 0px  no-repeat;
+}
+#content4{
+	background:url(../images/background4.png) 0px 0px fixed repeat-x;
+}
+#title4{
+	background:url(../images/title4.png) 0px 0px no-repeat;
+}
